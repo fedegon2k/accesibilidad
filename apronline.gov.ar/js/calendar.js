@@ -206,8 +206,8 @@ $.fn.zabuto_calendar = function (options) {
 
             var monthLabels = $calendarElement.data('monthLabels');
 
-            var $prevMonthCell = $('<th></th>').append($prevMonthNav);
-            var $nextMonthCell = $('<th></th>').append($nextMonthNav);
+            var $prevMonthCell = $('<th><span class="sr-only">Mes Anterior </span> </th>').append($prevMonthNav);
+            var $nextMonthCell = $('<th><span class="sr-only">Mes Siguiente </span> </th>').append($nextMonthNav);
 
             var $currMonthLabel = $('<span>' + monthLabels[month] + ' ' + year + '</span>');
             $currMonthLabel.dblclick(function () {
