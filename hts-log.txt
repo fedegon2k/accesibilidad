@@ -1,0 +1,27 @@
+HTTrack3.49-2 launched on Mon, 02 Dec 2019 10:04:38 at http://apronline.gov.ar/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -*.pdf
+(webhttrack -q -%i -w http://apronline.gov.ar/ -O "/home/fedegon/websites/apr2" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -*.pdf -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:09:52	Error: 	"Not Found" (404) at link https://apronline.gov.ar/autogestion.apronline.gov.ar (from apronline.gov.ar/)
+10:10:23	Error: 	"Not Found" (404) at link apronline.gov.ar/assets/pdf/Modifica art. 11, inciso 1 de la RG 07/16 (from apronline.gov.ar/?modulo=resoluciones-generales)
+10:12:06	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit
+10:12:06	Error: 	"Not Found" (404) at link apronline.gov.ar/img/favicon.ico (from apronline.gov.ar/)
+10:12:45	Warning: 	HTML file (65630 bytes) retransferred due to lack of cache: apronline.gov.ar/index.php
+10:12:58	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js
+10:13:03	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): https://www.google.com/recaptcha/api.js
+10:13:06	Warning: 	HTML file (59325 bytes) retransferred due to lack of cache: apronline.gov.ar/?modulo=medios-pago
+10:13:09	Warning: 	File seems complete (same size), but there was a cache read error (4294967295): apronline.gov.ar/suav/caches/loader.php?t=js&f=ea2ade238f87ca4716b2d452d2bd2be1
+10:13:14	Warning: 	HTML file (68424 bytes) retransferred due to lack of cache: apronline.gov.ar/?modulo=noticias
+10:13:21	Warning: 	HTML file (61788 bytes) retransferred due to lack of cache: apronline.gov.ar/index.php?modulo=ordenanzas
+10:13:26	Warning: 	HTML file (63904 bytes) retransferred due to lack of cache: apronline.gov.ar/?modulo=noticias&tag=1
+10:13:28	Warning: 	HTML file (58483 bytes) retransferred due to lack of cache: apronline.gov.ar/index.php?modulo=habilitaciones&modo=habilitar
+10:13:30	Warning: 	HTML file (250085 bytes) retransferred due to lack of cache: apronline.gov.ar/?modulo=profesional
+10:13:48	Warning: 	HTML file (250153 bytes) retransferred due to lack of cache: apronline.gov.ar/index.php?modulo=profesional
+10:14:06	Error: 	"Not Found" (404) at link apronline.gov.ar/suav/favicon.ico (from apronline.gov.ar/suav/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 10 minutes 12 seconds : 206 links scanned, 212 files written (18018701 bytes overall) [10717621 bytes received at 17512 bytes/sec], 10058002 bytes transferred using HTTP compression in 200 files, ratio 26%, 4.4 requests per connection
+(4 errors, 12 warnings, 0 messages)

@@ -1,0 +1,269 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<!-- Mirrored from apronline.gov.ar/suav/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 13:11:32 GMT -->
+<head>
+	<!-- Design & Development:  El Webstudio - info@elwebstudio.com - http://www.elwebstudio.com/ -->
+    
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="shortcut icon" href="favicon.html" />
+	<title>Sistema Unico de Atencion Vecinal</title>
+
+    <!-- Meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7" />
+    <!--<meta name="author" content="Mauro Menegat" />-->
+
+
+
+     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../vendors/custom.min.css" rel="stylesheet">
+
+    
+
+   	<script type="text/javascript" src="caches/loader5dfe.php?t=js&amp;f=ea2ade238f87ca4716b2d452d2bd2be1"></script>
+
+
+   <!-- jQuery     -->
+
+    <script type="text/javascript" src="../../code.jquery.com/jquery-3.1.0.min.js"></script>
+
+
+    <!-- Bootstrap -->
+
+    <script type="text/javascript" src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- FastClick -->
+
+    <script type="text/javascript" src="../vendors/fastclick/lib/fastclick.js"></script>
+
+    <!-- NProgress -->
+
+    <script type="text/javascript" src="../vendors/nprogress/nprogress.js"></script>
+
+    <!-- jQuery Smart Wizard -->
+
+    <script type="text/javascript" src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+
+    <script type="text/javascript" src='../../www.google.com/recaptcha/api.js'></script>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgiiAiBKVVXEyjdjphj7jRYIXepSwzDl4&amp;libraries=adsense&amp;sensor=true&amp;language=es"></script>
+
+
+</head>
+
+<div class="nav_menu" style="background-color:#2A3F54">
+            <nav>
+<img src="imgs/logo_solo_lp.png" style="width: 80px; padding: 11px;" alt="logo">
+<img src="imgs/texto_solo_lp.png" style="margin-left: -20px;" alt="logo_text">
+              
+              <ul style="position:absolute;float: left;margin: 10px !important;">
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+
+              
+              <li class="">
+                  <a href="#" style="color:#fff !important" class=" hidden-xs user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    Sistema Unico de Atención Vecinal  
+                  </a>
+               </li>
+              </ul>
+            </nav>
+          </div>
+    
+    <script>
+      jQuery.noConflict();
+    </script>
+
+<div class="col-xs-12 jumbotron">
+    <div class="container">
+    <div class="row">
+        <div id="consulta" class="col-sm-offset-3 col-sm-6 col-xs-12 hidden">
+            <div class="x_panel">
+
+            <div class="x_title">
+                <h2>Consultar Solicitud</h2>
+                <small class="pull-right"><a href="#" onclick="cambiaanueva()"> <i class="fa fa-share" aria-hidden="true"></i> Nueva Solicitud</a></small>
+                <div class="clearfix">
+                </div>
+            </div>
+            <form method="post" action="http://apronline.gov.ar/suav/consulta.php" id="frmcons" name="frmcons" enctype="multipart/form-data">
+            <div class="form-group">
+                <div class="row-fluid">
+                    <label for="solicitud" class="control-label col-xs-6">N&deg; de Solicitud</label>
+                    <input type="text" value="" class="form-control col-xs-6" name="solicitud" id="solicitud" />
+                </div>
+                <div class="row-fluid">
+                    <label for="dni" class="control-label col-xs-6">DNI</label>
+                    <input type="text" value="" class="form-control col-xs-6" name="dni" id="dni" />
+                 </div>
+                </div>
+              <div class="col-xs-12" style="margin-top:20px">
+               <button type="button" class="btn btn-default" name="consultar" id="btnconsultar" value="si" class="boton_chico"> Consultar</button>
+              </div>
+            </form>
+            </div>
+        </div>
+        <div id="nueva" class="col-sm-offset-3 col-sm-6 col-xs-12">
+            <div class="x_panel">
+            <div  class="x_title">
+                <h2>Nueva Solicitud</h2>
+                <small class="pull-right"><a href="#" onclick="cambiaaconsulta()"><i class="fa fa-share" aria-hidden="true"></i> Consulta Solicitud</a></small>
+                <div class="clearfix">
+                </div>
+            </div>
+            
+            <div class="x_content">
+                <form method="post" action="http://apronline.gov.ar/suav/nueva.php" id="frm-gen" enctype="multipart/form-data">
+                    <div id="nuevas" class="despliega">
+                        <div class="row-fluid">
+                        <label for="asunto" class="control-label col-xs-6">Asunto de la Solicitud</label>
+                        <select name="asunto" id="asunto" class="form-control  col-xs-6" rel="#tema">
+                            <option value="" selected="selected">-- Seleccione --</option>
+                                                            <option value="1">Alumbrado y Luminaria</option>
+                                                            <option value="2">Barrido y Limpieza General</option>
+                                                            <option value="3">Señales de Tránsito</option>
+                                                            <option value="4">Residuos</option>
+                                                            <option value="5">Conservación de Espacios</option>
+                                                            <option value="6">Impositivo</option>
+                                                            <option value="7">Habilitaciones</option>
+                                                            <option value="8">Defensa al Consumidor</option>
+                                                            <option value="9">Generales</option>
+                                                            <option value="10">Cementerio</option>
+                                                            <option value="11">Tránsito</option>
+                                                            <option value="12">Control Urbano</option>
+                                                            <option value="13">Obras Particulares</option>
+                                                            <option value="14">Transporte</option>
+                                                            <option value="15">Juzgado de Faltas</option>
+                                                            <option value="16">Desarrollo Social</option>
+                                                            <option value="17">Denuncias y Quejas</option>
+                                                            <option value="18">CALL-CENTER</option>
+                                                            <option value="19">Derechos Humanos</option>
+                                                            <option value="20">Ambiental</option>
+                                                            <option value="21">Mediación Vecinal</option>
+                                                            <option value="22">Limpieza General</option>
+                                                            <option value="23">Asistencia a la víctima</option>
+                                                            <option value="24">Ente Municipal de La Plata</option>
+                                                            <option value="25">Autogestión</option>
+                                                            <option value="26">Presupuesto Participativo</option>
+                                                            <option value="28">Salud</option>
+                                                            <option value="29">Jefatura de Gabinete</option>
+                                                    </select><br>
+                     </div>
+
+                        <div class="row-fluid">
+                        <label for="tema" class="control-label col-xs-6">Tema</label>
+                        <select name="tema" id="tema" class="form-control  col-xs-6" rel="#motivo">
+                            <option value="">-- Seleccione Asunto --</option>
+                        </select><br>
+                     </div>
+                        <div class="row-fluid">
+                        <label for="motivo" class="control-label col-xs-6">Motivo</label>
+                        <select name="motivo" class="form-control  col-xs-6" id="motivo">
+                            <option value="1">-- Seleccione Tema --</option>
+                        </select>
+<!-- <div class="col-xs-12">
+    <label class="cameraButton visible-xs">
+    <span class="fa-stack fa-lg">
+  <i class="fa fa-circle fa-stack-2x"></i>
+  <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
+</span> Tomar Foto
+<input type="file" accept="image/*" capture="camera"></label>
+</div> -->
+                     </div>
+
+                    </div>
+                    <div class="col-xs-12" style="margin-top:20px">
+                      <button id="btn_generar" class="btn btn-default" type="submit"  name="nueva" value="si" class="boton_chico">Generar</button>
+                    </div>
+                </form>
+            </div>
+     </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="hidden">
+      <div id="msg-ventana">
+            <div class="error-msgbox"></div>
+        </div>
+        <div id="msg-carga">
+           <div class="info-msgbox">Por favor espere mientras se carga el contenido...</div>
+        </div>
+</div>
+
+<br>
+<br>
+</div>
+</div>
+
+<div id="ft" class="col-xs-12">
+			        <!-- footer content -->
+        <footer>
+          <div align="center">
+            <a href="../index.html" class="webstudio">Dirección de Ingeniería y Software | Facta non verba</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+   
+   <style>
+footer{
+	margin-left: 0px !important;
+}
+
+   </style>
+</body>
+<script>
+    function cambiaaconsulta(){
+     $('#consulta').removeClass('hidden');
+     $('#nueva').addClass('hidden');
+    }
+     function cambiaanueva(){
+     $('#consulta').addClass('hidden');
+     $('#nueva').removeClass('hidden');
+    }
+</script>
+<style>
+    
+    label.cameraButton {
+  display: inline-block;
+  margin: 1em 0;
+
+  /* Styles to make it look like a button */
+  padding: 0.5em;
+
+}
+
+/* Look like a clicked/depressed button */
+label.cameraButton:active {
+  border-color: #CCC #EEE #EEE #CCC;
+}
+
+/* This is the part that actually hides the 'Choose file' text box for camera inputs */
+label.cameraButton input[accept*="camera"] {
+  display: none;
+}
+.cameraButton input{
+  display: none;
+
+}
+
+</style>
+
+<!-- Mirrored from apronline.gov.ar/suav/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 Dec 2019 13:12:05 GMT -->
+</html>
