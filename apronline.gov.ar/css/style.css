@@ -1171,7 +1171,7 @@ p.card-text{
 
 }
 .site-footer h2, .site-footer li a{
-		color:#6E7174
+		color:red !important;
 }
 
 .site-footer p {
