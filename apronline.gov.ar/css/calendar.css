@@ -37,6 +37,7 @@ div.zabuto_calendar .table tr.calendar-month-header th span {
 }
 
 div.zabuto_calendar .table tr.calendar-dow-header th {
+    color: rgb(0, 113, 114);
     background-color: #f2f3f4;
 }
 
@@ -74,6 +75,7 @@ div.zabuto_calendar .table tr td div.day {
     margin: 0;
     padding-top: 7px;
     padding-bottom: 7px;
+    color: rgb(0, 113, 114);
 }
 
 /* actions and events */
