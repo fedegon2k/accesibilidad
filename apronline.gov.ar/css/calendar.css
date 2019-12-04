@@ -33,6 +33,7 @@ div.zabuto_calendar .table tr.calendar-month-header th span {
     cursor: pointer;
     display: inline-block;
     padding-bottom: 10px;
+    color: rgb(0, 113, 114);
 }
 
 div.zabuto_calendar .table tr.calendar-dow-header th {
