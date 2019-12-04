@@ -1056,7 +1056,7 @@ height: 150px;
 
 .team .card-title-wrap .card-title {
   font-size: 21px;
-  color: #919191;
+  color: rgb(0, 113, 114);
   
   border-radius:5px
 }
@@ -1201,6 +1201,7 @@ p.card-text{
 
 .site-footer .bottom .list-inline, .site-footer .bottom p {
   margin: 0;
+  color: rgb(0, 113, 114);
 }
 
 .site-footer .bottom .list-inline {
