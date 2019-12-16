@@ -57,7 +57,7 @@ $.fn.zabuto_calendar = function (options) {
 
             $legendObj = drawLegend($calendarElement);
 
-            var $containerHtml = $('<div class="zabuto_calendar" id="' + $calendarElement.attr('id') + '"></div>');
+            var $containerHtml = $('<div class="zabuto_calendar" id="x' + $calendarElement.attr('id') + '"></div>');
             $containerHtml.append($tableObj);
             $containerHtml.append($legendObj);
 
